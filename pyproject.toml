@@ -1,0 +1,31 @@
+[project]
+name = "f500"
+version = "0.1.0"
+description = "Cambridge F500 Problem Set"
+requires-python = ">=3.10"
+dependencies = [
+  # Core
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "scipy>=1.11",
+
+  # Stats/econometrics: skew/kurtosis, ACF/PACF, Ljung-Box, regressions, etc.
+  "statsmodels>=0.14",
+
+  # Data access 
+  "yfinance>=0.2.40",
+  "pandas-datareader>=0.10.0",
+
+  # Plotting
+  "matplotlib>=3.8",
+
+  # Jupyter + kernel
+  "jupyter>=1.0.0",
+  "ipykernel>=6.29",
+
+  # Export to Excel 
+  "openpyxl>=3.1",
+]
+
+[tool.uv]
+# uv will manage a fast lockfile (uv.lock)
